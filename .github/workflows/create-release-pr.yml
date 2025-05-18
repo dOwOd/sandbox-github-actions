@@ -17,5 +17,5 @@ jobs:
         with:
           title: "Release to production"
           body: "This PR merges main branch changes into release branch"
-          head: "main"
+          branch: "main"
           base: "release"
