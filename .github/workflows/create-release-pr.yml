@@ -27,5 +27,5 @@ jobs:
           gh pr create \
             -B 'release' \
             -t 'release' \
-            -b "## 変更内容\n\n$COMMITS" \
+            -b "$COMMITS" \
             -d
