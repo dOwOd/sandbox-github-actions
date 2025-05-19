@@ -15,4 +15,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: Create release pr
         run: |
-          gh pr create -B 'release' -t 'release' -b "" -d
+          COMMITS=$(git log release..main --pretty=format:"- %s (%h) by %an")
+
+          gh pr create \
+            -B 'release' \
+            -t 'release' \
+            -b "## 変更内容\n\n$COMMITS" \
+            -d
