@@ -15,4 +15,4 @@ jobs:
       - uses: actions/checkout@v4
       - name: Create release pr
         run: |
-          gh pr create -B 'release' -t 'release' -b "main"
+          gh pr create -B 'release' -t 'release' -b ""
